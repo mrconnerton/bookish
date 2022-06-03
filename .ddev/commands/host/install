@@ -1,0 +1,19 @@
+#!/bin/bash
+
+## Description: Install Drupal with Bookish
+## Usage: install
+## Example: "ddev install"
+## ProjectTypes: drupal9
+
+# Abort if anything fails
+set -e
+
+echo -e "\n\033[1;36m Installing Drupal Dependencies.\033[0m"
+ddev composer install --apcu-autoloader
+
+echo -e "\n\033[1;36m Installing Drupal with Bookish and Tome.\033[0m"
+ddev drush si bookish -y
+ddev drush theme:enable bookish_sub_theme -y
+
+echo -e "\n\033[1;36m Install complete. Login with the following url:\033[0m"
+ddev drush uli

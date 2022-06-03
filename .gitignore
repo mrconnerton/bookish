@@ -1,0 +1,38 @@
+# Ignore configuration files that may contain sensitive information.
+/web/sites/*/local.settings.php
+/web/sites/*/local.services.yml
+.env
+
+# Ignore paths that contain user-generated content.
+/web/sites/*/files
+/web/sites/*/private
+
+# Ignore core and contrib modules. These should be created during build process.
+/web/core
+/web/modules/contrib
+/web/themes/contrib
+/web/profiles/contrib
+/web/libraries
+
+# Scaffold
+/web/.csslintrc
+/web/.eslintignore
+/web/.eslintrc.json
+/web/.gitignore
+/web/.ht.router.php
+/web/.htaccess
+/web/INSTALL.txt
+/web/README.md
+/web/example.gitignore
+/web/index.php
+/web/modules/README.txt
+/web/profiles/README.txt
+/web/robots.txt
+/web/update.php
+/web/web.config
+/web/sites/default/default.*
+/web/sites/example.*
+
+# Composer vendor
+/vendor/
+/vendor/.git
