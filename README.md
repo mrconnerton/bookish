@@ -5,7 +5,7 @@ box experience for [Tome] users as nice as possible.
 
 This is a skeleton repository built on top of `drupal/core-recommended` and [DDEV].
 
-To get started clone the repository and run `ddev install`
+To get started clone the repository and run `ddev start && ddev install`
 
 Follow these links to learn more about each part:
 
